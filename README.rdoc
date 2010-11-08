@@ -1,3 +1,12 @@
 == SYNOPSIS
 
 A simple html5 offline example utilizing navigator.geolocation with IOS extras: icon, loading image, and full screen.
+
+== HOW TO
+* start the rails app, e.g. "rails server" or unicorn
+* visit the url on your IOS device or html5 capable browser
+* authorize for location tracking and refresh
+* additional IOS directions:
+	* from safari, bookmark to home
+	* close safari page
+	* open bookmarked app
