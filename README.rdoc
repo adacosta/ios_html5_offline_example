@@ -1,0 +1,3 @@
+== SYNOPSIS
+
+A simple html5 offline example utilizing navigator.geolocation with IOS extras: icon, loading image, and full screen.
