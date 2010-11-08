@@ -1,7 +1,6 @@
 <script type="text/javascript" charset="utf-8">
   $(document).ready(function(){
     if(navigator.geolocation) {
-      browserSupportFlag = true;
       navigator.geolocation.watchPosition(function(position) {
         coords = 'latitude: ' + position['coords']['latitude'] + '<br/>';
         coords += 'longitude: ' + position['coords']['longitude'] + '<br/>';
