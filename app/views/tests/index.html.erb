@@ -1,0 +1,25 @@
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){
+    if(navigator.geolocation) {
+      browserSupportFlag = true;
+      navigator.geolocation.watchPosition(function(position) {
+        coords = 'latitude: ' + position['coords']['latitude'] + '<br/>';
+        coords += 'longitude: ' + position['coords']['longitude'] + '<br/>';
+        coords += 'heading: ' + position['coords']['heading'] + '<br/>';
+        coords += 'speed: ' + position['coords']['speed'] + '<br/>';
+        coords += 'accuracy: ' + position['coords']['accuracy'] + '<br/>';
+        $('#status').html(coords);
+				// error callback
+      }, function(){
+				$('#status').html('platform not supported');
+			},
+				{'enableHighAccuracy': true}
+			);
+  	}else{
+			// platform not supported
+  	}
+  });
+</script>
+
+<br/>
+<div id="status">platform not supported or no connectivity</div>
